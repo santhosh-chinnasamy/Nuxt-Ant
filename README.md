@@ -1,7 +1,7 @@
-# nuxt-ant
+# Nuxt-Ant
 
-> Nuxt App with Ant Design
-
+### Tribute Site for Dennis Ritchie
+> Built with Nuxjs & Ant Design
 ## Build Setup
 
 ``` bash

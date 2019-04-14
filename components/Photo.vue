@@ -1,0 +1,9 @@
+<template>
+  <div>
+    <img
+      slot="extra"
+      alt="logo"
+      src="https://t00.deviantart.net/7wDDMaVlLlaSD0fAKWDK317OG0M=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre00/4c87/th/pre/f/2011/288/a/0/dennis_ritchie__father_of_c_by_pkarlys-d4cy15w.jpg"
+    >
+  </div>
+</template>

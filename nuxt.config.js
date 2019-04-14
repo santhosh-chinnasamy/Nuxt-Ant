@@ -21,7 +21,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#f0f' },
 
   /*
   ** Global CSS
@@ -60,5 +60,6 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  
 }

@@ -1,35 +1,25 @@
 <template>
   <section class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        nuxt-ant
-      </h1>
-      <h2 class="subtitle">
-        Nuxt App with Ant Design
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
+      <Navbar/>
+      <br>
+      <Photo/>
+      <br>
+      <Footer/>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
+import Footer from '~/components/Footer.vue'
+import Photo from '~/components/Photo.vue'
 
 export default {
   components: {
-    Logo
+    Navbar,
+    Footer,
+    Photo
   }
 }
 </script>
