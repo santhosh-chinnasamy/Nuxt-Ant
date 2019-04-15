@@ -7,7 +7,7 @@
         </nuxt-link>
       </a-menu-item>
 
-      <a-menu-item key="info-circle">
+      <a-menu-item key="about">
         <nuxt-link to="/about">
           <a-icon type="info-circle"/>About
         </nuxt-link>

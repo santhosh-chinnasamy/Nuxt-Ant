@@ -4,7 +4,7 @@
       <a-layout>
         <Navbar/>
         <a-layout-content>
-          <a-list itemLayout="vertical" :dataSource="data">
+          <a-list itemLayout="vertical" :dataSource="about">
             <a-list-item slot="renderItem" slot-scope="item">
               <a-list-item-meta>
                 <h4 slot="description">{{item.desc}}</h4>
@@ -26,13 +26,25 @@
 
 
 <script>
-
 import Navbar from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 export default {
   data() {
     return {
-      data
+      about,
+      title: 'About | DR'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'About Dennis Ritchie'
+        }
+      ]
     }
   },
   components: {
@@ -41,7 +53,7 @@ export default {
   }
 }
 
-const data = [
+const about = [
   {
     desc:
       'Dennis MacAlistair Ritchie (September 9, 1941 – c. October 12, 2011) was an American computer scientist.'

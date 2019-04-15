@@ -16,6 +16,24 @@ import Footer from '~/components/Footer.vue'
 import Photo from '~/components/Photo.vue'
 
 export default {
+  data() {
+    return {
+      title: 'Dennis Ritchie'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Tribute site for Dennis Ritchie'
+        }
+      ]
+    }
+  },
   components: {
     Navbar,
     Footer,
